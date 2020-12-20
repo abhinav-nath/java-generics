@@ -21,6 +21,11 @@ Store<String>  -->  Parameterized Type
       String --> Type Argument (or Actual Type Parameter)
 
 
+----------
+ Raw Type
+----------
+Store stringStore = new Store<>()  -->  Raw Type
+
 
 ------------------------------------
  Type Parameters Naming Conventions
