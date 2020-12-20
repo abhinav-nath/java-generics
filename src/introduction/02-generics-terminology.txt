@@ -31,7 +31,7 @@ Store stringStore = new Store<>()  -->  Raw Type
  Type Parameters Naming Conventions
 ------------------------------------
 
-Use single, uppercase letters
+Use single, upper case letters
 
 E - Element (Collections)
 K - Key, V - Value (Maps)
