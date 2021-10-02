@@ -33,6 +33,7 @@ public class GenericsDemo {
 
 interface Container<T> {
     void set(T a);
+
     T get();
 }
 
