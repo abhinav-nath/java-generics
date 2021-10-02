@@ -1,0 +1,40 @@
+# Generics Terminology
+
+```java
+class Store<T> {...}  -->  Generic Type
+            ^
+            T --> Type Parameter (or Formal Type Parameter)
+```
+
+```java
+Store<Store> stringStore = new Store<String>()
+
+Store<Date> dateStore = new Store<Date>()
+
+Store<List<Date>> dateListStore = new Store<List<Date>>()
+
+Store<Book> bookStore = new Store<>()  -->  Diamond Notation (Java 7) - Short hand Type Inference 
+
+
+Store<String>  -->  Parameterized Type
+        ^
+      String --> Type Argument (or Actual Type Parameter)
+```
+
+## Raw Type
+
+```java
+Store stringStore = new Store<>()  -->  Raw Type
+```
+
+## Type Parameters Naming Conventions
+
+Use single, upper case letters
+
+```
+E         -  Element (Collections)
+K         -  Key, V - Value (Maps)
+N         -  Number
+T         -  Type (usually in non-Collections)
+S, U, V   -  2nd, 3rd, 4th types
+```
