@@ -21,10 +21,42 @@ Store<String>  -->  Parameterized Type
       String --> Type Argument (or Actual Type Parameter)
 ```
 
-## Raw Type
+## Raw Types
+
+When we do not use the diamond operator `<>` at the object creation.
+
+This is not the recommended at all !!
+
+IntelliJ will warn you - do not use Generic classes this way!
 
 ```java
 Store stringStore = new Store<>()  -->  Raw Type
+store.set("Apple");
+store.set(27);
+
+ArrayList unknownArrayList = new ArrayList();
+```
+
+## Generic Methods
+
+- These methods have their own type parameters
+- They can be created in non-generic classes
+- Both `static` and `non-static` generic methods are allowed
+- Generic constructors are allowed
+
+```java
+public class Util {
+
+    // the type parameter <T> must be before the return type
+    public static <T> void displayToString(T type) {
+        System.out.println(type.toString());
+    }
+
+}
+```
+
+```java
+Util.displayToString(favoriteAnimal);
 ```
 
 ## Type Parameters Naming Conventions
