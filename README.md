@@ -43,3 +43,8 @@ favoriteAnimal.set("Tiger");
 - [Generics Terminology](./notes/02_generics-terminology.md "Generics Terminology")
 - [Type Inference](./notes/03_type-inference.md "Type Inference")
 - [Generics Restrictions](./notes/04_generics-restrictions.md "Generics Restrictions")
+
+---
+<p align="center">
+  ⭐ Star this repository — it helps!
+</p>
